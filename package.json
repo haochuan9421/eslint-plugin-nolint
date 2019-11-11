@@ -1,0 +1,41 @@
+{
+  "name": "eslint-plugin-nolint",
+  "version": "1.0.0",
+  "description": "ESLint plugin working with nolint",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "commit:force": "git-cz -n",
+    "lint": "git diff --cached --name-only --diff-filter=d | grep -E '\\.js$' | xargs eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaoChuan9421/eslint-plugin-nolint.git"
+  },
+  "keywords": [
+    "nolint",
+    "eslint-plugin",
+    "eslint",
+    "stylelint"
+  ],
+  "author": "郑昊川",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HaoChuan9421/eslint-plugin-nolint/issues"
+  },
+  "homepage": "https://github.com/HaoChuan9421/eslint-plugin-nolint#readme",
+  "devDependencies": {
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.9",
+    "prettier": "^1.19.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
