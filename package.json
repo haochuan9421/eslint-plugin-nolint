@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-nolint",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ESLint plugin working with nolint",
   "main": "index.js",
   "files": [
@@ -31,6 +31,7 @@
   "devDependencies": {
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^6.7.1",
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-prettier": "^3.1.1",
     "husky": "^3.0.9",
@@ -41,19 +42,14 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.6.1",
-    "@typescript-eslint/parser": "^2.6.1",
-    "@vue/eslint-config-typescript": "^4.0.0",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.6.0",
-    "eslint-config-react-app": "^5.0.2",
-    "eslint-plugin-flowtype": "^3.13.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "eslint-plugin-vue": "^6.0.0",
-    "typescript": "^3.7.2"
+  "reactPeerDependencies": {
+    "eslint-config-react-app": "5.x"
+  },
+  "vuePeerDependencies": {
+    "eslint-plugin-vue": "5.x",
+    "@vue/eslint-config-typescript": "4.x"
+  },
+  "wxappPeerDependencies": {
+    "@typescript-eslint/parser": "2.x"
   }
 }
